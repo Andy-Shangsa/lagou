@@ -1,0 +1,84 @@
+<div id="resume" [@flyIn]="selected">
+<div class="content">
+	<dl class="resume-header">
+		<dt>
+			<img src="./assets/img/default_headpic.png" width="117px" height="117px" atl="头像" class="resume-headimg">
+			<img src="./assets/img/headbg.png" width="137px" height="140px" atl="头像" class="resume-headbg">
+			<img src="./assets/img/headhover.png" width="119px" height="118px" atl="头像" class="resume-headhover">
+			<input type="file" name="uppic" class="uppic" title="支持jpg、jpeg、gif、png格式，文件小于10M"/>
+		</dt>
+		<dd>
+			<h2>基本信息</h2>
+		</dd>
+	</dl>
+	<div class="resume-form-container">
+		<form class="form-horizontal" class="resume-default">
+			<div class="row">
+				<div class="form-group">
+					<div class="col-sm-12">
+						<!--	使用ngmodel必须引入form模块，并且表单组件要定义name属性	-->
+						<input type="text" name="resume-name" [(ngModel)]="Uname" class="form-control" id="resume-name" placeholder="姓名">
+			    	</div>
+				</div>
+			</div>
+		  	<div class="row">
+				<div class="form-group">
+					<div class="col-sm-6">
+						<button class="resume-Uqualifications dropdown-toggle"  id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" name="resume-Uqualifications">
+							{{qualification}}
+							<em class="Uqualifications-dropdown"></em>
+						</button>
+
+							<ul class="Uqualifications-dropdown-menu dropdown-menu" aria-labelledby="dropdownMenu">
+								<li (click)="select('qualification',item)" *ngFor="let item of qualifications">{{item}}</li>
+							</ul>
+					</div>
+					<div class="col-sm-6">
+						<button class="resume-Uqualifications dropdown-toggle" name="resume-Uqualifications" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						{{year}}
+							<em class="Uqualifications-dropdown"></em>
+						</button> 
+
+						<ul class="Uqualifications-dropdown-menu dropdown-menu" aria-labelledby="dropdownMenu2">
+							<li (click)="select('year',item)" *ngFor="let item of workYear">{{item}}</li>
+						</ul>
+
+					</div>
+			      	
+			    </div>
+			</div>
+			<div class="row">
+				<div class="form-group">
+					<div class="col-sm-12">
+						<input type="text" class="form-control" name="resume-Ucall" [(ngModel)]="Ucall" id="resume-name" placeholder="手机号">
+			    	</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group">
+					<div class="col-sm-12">
+						<input type="text" name="resume-Umail" [(ngModel)]="Umail" class="form-control" id="resume-name" placeholder="邮箱">
+			    	</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group">
+					<div class="col-sm-12">
+						<button style="background-color: #00b38a;" type="button" class=" form-control btn btn-success">下一步：继续完善职业信息</button>
+			    	</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<h6 (click)="continueR()" class="continue-return">保存以上信息，但暂不继续完善信息</h6>
+		    	</div>
+			</div>
+	  		
+		</form>
+
+	</div>
+
+	<div class="bg-book"></div>
+	
+</div>
+</div>

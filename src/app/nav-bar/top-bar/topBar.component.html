@@ -1,0 +1,25 @@
+<div id="top-bar">
+	<nav class="navbar navbar-default" id="nav-top-bar">
+        <div class="content">
+            <ul class="top-menu">
+                <li>
+                    <a class="click" href="https://www.lagou.com/app/download.html">
+                    <i class="iconfont icon-phone"></i>拉勾APP
+                    </a>
+                </li>
+                <li>
+                    <i class="line">|</i>
+                </li>
+                <li>
+                    <a>进入企业版</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="navbar-right">
+                <li class="message-li" *ngFor="let value of topMenu">
+                    <a [routerLink]="value.hash" (click)="topNav($event)">{{value.title}}</a>
+                </li>
+                    
+            </ul>
+        </div>
+  	</nav>
+</div>

@@ -1,0 +1,161 @@
+.job-list-container {
+	margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Hiragino Sans GB","Microsoft Yahei",SimSun,Arial,"Helvetica Neue",Helvetica;
+    color: #333;
+    word-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.job-list-li {
+    position: relative;
+    width: 744px;
+    height: 123px;
+    border-bottom: 1px dashed #e1e1e1;
+}
+
+.job-list-top {
+    height: 62px;
+    background-color: #fff;
+    padding-top: 22px;
+    padding-left: 15px;
+}
+
+.job-list-top-left {
+	width: 400px;
+    margin-right: 20px;
+}
+
+.job-list-name {
+	height: 34px;
+    line-height: 28px;
+}
+
+.job-list-name h2 {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+.job-list-name h2 a {
+	max-width: 190px;
+	color: #00b38a;
+}
+
+.job-list-name .len-limit {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.job-list-name h2 a span {
+    margin-left: 6px;
+    color: #00b38a;
+}
+
+.job-list-date {
+    margin-left: 10px;
+    margin-top: -5px;
+	color: #999;
+    font-size: 15px;
+}
+
+.job-list-info {
+	height: 28px;
+}
+
+.job-money {
+    font-size: 16px;
+    color: #fa6041;
+    margin-right: 20px;
+}
+
+.job-list-top-right {
+	width: 294px;
+}
+
+.company-name {
+	height: 34px;
+    color: #00b38a;
+}
+
+.company-name a {
+	font-size: 16px;
+	color: #00b38a;
+	cursor: pointer;
+}
+
+.industry {
+	height: 28px;
+}
+
+.job-list-bottom {
+    height: 39px;
+    padding: 0 15px;
+    margin-top: 21px;
+    background-color: #fafafa;
+}
+
+.job-list-bottom-left {
+    width: 414px;
+    height: 39px;
+    margin-right: 20px;
+    overflow: hidden;
+    line-height: 39px;
+}
+
+.job-list-bottom-left span {
+    display: inline-block;
+    max-width: 84px;
+    height: 20px;
+    padding: 0 5px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #555;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+.job-list-bottom-right {
+	width: 280px;
+    height: 39px;
+    overflow: hidden;
+    line-height: 39px;
+}
+
+.see-more {
+    font-size: 16px;
+    color: #fff;
+    background-color: #00b38a;
+    padding: 5px 15px;
+    margin: 20px 0 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.see-more span {
+    margin-right: 15px;
+}
+
+.see-more-icon {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -1px;
+}
+

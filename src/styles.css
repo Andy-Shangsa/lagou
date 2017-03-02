@@ -1,0 +1,114 @@
+/*	by shangshouan */
+/* You can add global styles to this file, and also import other style files */
+/*------- reset ------*/
+@charset "utf-8";
+/* --Elements-- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,lable,textarea,p,blockquote,img,th,td{margin:0;padding:0;}
+img{border:none; float:none;}
+fieldset{ border: 0; } 
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul,li{list-style:none;}
+dt,dd,li{position:relative;}
+caption,th{ text-align:left;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+/*body{margin:0;font:12px Verdana, Arial, Helvetica, sans-serif,"宋体"; color:#42515A; background:#FFF; word-break:break-all;}*/
+select,input{vertical-align:middle; padding:1px 0;}
+label {cursor:hand;}
+table{border-collapse:collapse;	border-spacing:0px;}
+q:before,q:after{ content:”; } 
+abbr, acronym{ border: 0; }
+/* --Link Styles-- */
+a{color:#0600F9;text-decoration: none;outline:none;blr:expression(this.onFocus=this.blur());}
+/*a:link, a:visited{color:#333;text-decoration:none;}
+a:hover, a:active{color:#ff3300;text-decoration:underline;}*/
+/*.red,a.red:link,a.red:visited{color:#f54100;}内页桔红色字体
+.black,a.black:link,a.black:visited{color:#000;}
+.white,a.white:link,a.white:visited{color:#fff; text-decoration:none;}
+a.white:hover{color:#ff0;}
+.blue,a.blue:link,a.blue:visited{color:#004b8b; font-weight:bold; font-size:12px;}*/
+button{outline:0;_blr:expression(this.onFocus=this.blur());} /*去除边框虚线*/
+/*	回到顶部	*/
+.cd-top {
+    width: 28px;
+    height: 64px;
+    position: fixed;
+    left: 50%;
+    bottom: 140px;
+    margin-left: 548px;
+    cursor: pointer;
+    background: url(assets/img/backtop.png) left top no-repeat;
+    white-space: nowrap;
+	visibility: hidden;
+	opacity: 1;
+	-webkit-transition: opacity .3s 0s, visibility 0s .3s;
+	-moz-transition: opacity .3s 0s, visibility 0s .3s;
+	transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+	-webkit-transition: opacity .3s 0s, visibility 0s 0s;
+	-moz-transition: opacity .3s 0s, visibility 0s 0s;
+	transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+	visibility: visible;
+	opacity: 1;
+}
+.cd-top.cd-fade-out {
+  	opacity: 1;
+}
+.cd-top:hover {
+	background-position: right top!important;
+}
+
+/*	图片问题(所有的图片都以index.html的位置来写，打包就可以正确获取路径) */
+/*	joblist.comonent.css  */
+.chat-me {
+    float: left;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background: url(./assets/img/chat-me.png) no-repeat 0 0;
+    margin-left: 10px;
+    cursor: pointer;
+}
+/*	navBar.comonent.css  */
+.ad-img-a {
+    background-image: url(./assets/img/top.jpg);
+}*/
+.logo-brand {
+    background-image: url("./assets/img/logo.png");
+}
+/*	resume.component.css  */
+#resume {
+    background: #00b38a url(./assets/img/resume-bg.png) center 0 no-repeat;
+}
+.bg-book {
+    background: url(./assets/img/book.png) no-repeat;
+}
+/*	resumeIndex.component.css  */
+.resume-index-bg {
+    background: url(./assets/img/tou.png) no-repeat;
+}
+.baseinfo-right {
+    background: url(./assets/img/top-bg.png) no-repeat;
+}
+.qr{
+    background: #f2f2f2 url(./assets/img/qr.png) 10px 10px no-repeat;
+}
+
+.qr-dropdown {
+    background: url(./assets/img/qr-border.png) no-repeat;
+}
+
+.baseinfo-left {
+    background: url(./assets/img/top-bg.png) no-repeat;
+}
+/*	底部foot，font.component.css */
+.foot-icon {
+    background: url(./assets/img/foot-icon.png) 0 0 no-repeat;
+}
+
+
+
+
+

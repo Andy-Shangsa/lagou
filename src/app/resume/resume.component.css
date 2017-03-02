@@ -1,0 +1,159 @@
+
+#resume {
+    width: 100%;
+    height: 750px;
+    padding-top: 123px;
+    padding-bottom: 90px;
+    margin-bottom: 20px;
+}
+#resume .content {
+    width: 395px;
+    height: 500px;
+    padding-bottom: 30px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+}
+
+.resume-header {
+	position: absolute;
+    left: 133px;
+    width: 137px;
+    height: 140px;
+    top: -66px;
+    z-index: 2;
+}
+
+.resume-headimg {
+	width: 117px;
+    height: 117px;
+    position: absolute;
+    left: 9px;
+    top: 8px;
+}
+
+.resume-headbg {
+	width: 137px;
+    height: 140px;
+    text-align: center;
+    position: absolute;
+}
+
+.resume-headhover {
+	width: 117px;
+    height: 117px;
+    position: absolute;
+    left: 9px;
+    top: 8px;
+}
+
+.resume-header dt input[type=file] {
+	width: 120px;
+    height: 117px;
+    position: absolute;
+    top: 9px;
+    left: 6px;
+    border-radius: 50%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.resume-header dd h2 {
+    position: absolute;
+    top: 119px;
+    left: 50%;
+    background: #fff;
+    margin-left: -28px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+.resume-form-container {
+	position: relative;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 104px
+}
+
+.resume-form-container input,select,button {
+	height: 47px;
+	margin: 11px 0;
+    border: none;
+    background-color: #f8f8f8;
+}
+
+.continue-return {
+	text-align: center;
+	cursor: pointer;
+}
+
+.resume-Uqualifications {
+    width: 140px;
+    background: #f8f8f8;
+    font-size: 14px;
+    color: #b5b5b5;
+    text-align: left;
+    padding: 0 15px;
+    border: 1px solid #f8f8f8;
+    border-radius: 3px;
+}
+
+.resume-Uqualifications.active {
+    border-color: #66afe9;
+    border: none;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+.Uqualifications-dropdown {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border: 6px solid #d3d3d3;
+    border-width: 6px 6px 0;
+    border-color: #d3d3d3 transparent transparent;
+    position: absolute;
+    right: 18px;
+    top: 32px;
+    cursor: pointer;
+}
+
+.Uqualifications-dropdown-menu {
+    position: absolute;
+    background: #fff;
+    height: 160px;
+    overflow: auto;
+    min-width: 140px;
+    width: 140px;
+    margin-left: 15px;
+    margin-top: -7px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #e7e7e7;
+    z-index: 10;
+}
+
+.Uqualifications-dropdown-menu li {
+    height: 33px;
+    font-size: 14px;
+    padding-left: 15px;
+    line-height: 33px;
+    cursor: pointer;
+}
+
+.Uqualifications-dropdown-menu li:hover {
+    background-color: #00b38a;
+}
+
+.bg-book {
+    width: 25px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 22px;
+}

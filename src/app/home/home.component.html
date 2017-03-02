@@ -1,0 +1,68 @@
+<div id="home" [@flyIn]="selected">
+	<div class="home-content">
+		<div class="left-menu">
+			<div class="nav-menu"><!--	左边导航菜单	-->
+				<div class="menu-box" (mouseleave)="activeSub=null">
+					
+					<div class="menu-main" *ngFor="let menu of navMenu"  (mouseover)="activeSub=menu.title" [ngClass]="{hover:activeSub==menu.title}">
+						<h2>
+							{{menu.title}}
+							<i class="iconfont icon-right menu-arrow"></i>
+						</h2>
+						<a *ngFor="let value of menu.list">{{value}}</a>
+					</div>
+
+					<div *ngFor="let menu of navMenu" (mouseover)="activeSub=menu.title" >
+						<div class="menu-sub" *ngIf="activeSub==menu.title" [ngClass]="menu.cl">
+							<dl>
+								<dt>{{menu.title}}</dt>
+							</dl>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="nav-sub">
+					<a href="">
+						<span>订阅职位</span>
+						<i class="iconfont icon-arrow-next"></i>
+					</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="right-content"><!--	右边内容区域	-->
+			<div class="form-group search-wrap">
+			    <div class="input-group">
+			      <input type="text" class="search-input" (click)="searchClick()" [placeholder]="searchPlaceholder">
+			      <button class="input-group-addon search-btn">搜索</button>
+			    </div>
+
+			    <div class="auto-search" *ngIf="autoSearch">
+					<span class="auto-search-title">猜你要搜</span>
+					<ul>
+						<li class="auto-search-list" *ngFor="let value of hotSearch">{{value}}</li>
+					</ul>
+				</div>
+			</div>
+
+			<dl class="hot-search">
+				<dt>热门搜索</dt>
+				<dd *ngFor="let value of hotSearch">{{value}}</dd>
+			</dl>
+
+			<slider-pic></slider-pic>
+
+			<ul class="job-tab">
+				<li routerLink="/home/hot" routerLinkActive="activeTab">热门职位</li>
+				<li routerLink="/home/new" routerLinkActive="activeTab">最新职位</li>
+			</ul>
+
+			<div>
+				<router-outlet></router-outlet>
+			</div>
+
+
+		</div>
+	</div>
+</div>

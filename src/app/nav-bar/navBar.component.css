@@ -1,0 +1,192 @@
+.navbar {
+    border-radius: 0px;
+    border: none;
+}
+
+#ad-img, #nav-top-bar {
+    margin: 0;
+    padding: 0;
+}
+
+#ad-img {
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+}
+ 
+#ad-img>a {
+    display: block;
+    height: 80px;
+    background-size: 100% 100%;
+    background-color: #fb265e;
+    width: 100%;
+    overflow: hidden;
+    text-indent: -999999em;
+}
+
+#nav-top-bar {
+    height: 30px;
+    min-height: 30px;
+    line-height: 30px;
+    background-color: #333;
+}
+
+.content {
+    margin: 0 30px;
+}
+
+.top-menu {
+    display: block;
+    white-space: nowrap;
+    overflow: none;
+}
+
+.line {
+    display: block;
+    float: left;
+    color: #c4c3c3;
+    text-align: center;
+    line-height: 15px;
+}
+
+#nav-top-bar li  a {
+    display: block;
+    float: left;
+    padding: 0 12px;
+    text-decoration: none;
+    color: #c4c3c3;
+    text-align: center;
+    line-height: 15px;
+    cursor: pointer;
+}
+
+#nav-top-bar li  a:hover {
+    color: #fff;
+}
+
+#nav-top-bar li .click {
+    color: #08d7a2;
+}
+
+#nav-top-bar li .click:hover {
+    color: #05eaaf;
+}
+
+.message-li {
+    position: relative;
+    border-left: 1px solid #ccc;
+}
+
+#navbar-right .message-li:first-child {
+    border-left: none;
+}
+
+/*  底部导航栏   */
+#nav-bar {
+    padding: 0;
+    height: 53px;
+    min-height: 53px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.24);
+}
+
+.logo-brand {
+	float: left;
+    width: 97px;
+    height: 34px;
+    margin: 10px 0 0;
+    padding: 0;
+    overflow: hidden;
+    text-indent: -99em;
+} 
+
+.change-city {
+    float: left;
+    height: 44px;
+    padding-top: 10px;
+    padding-left: 12px;
+    font-size: 18px;
+    line-height: 44px;
+    display: none;
+}
+
+.change-city strong {
+	margin-right: 8px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.change-city em {
+    color: #999;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#nav-bar li  a {
+	display: block;
+    padding: 0 8px;
+    margin: 0 16px;
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+    line-height: 53px;
+}
+
+#nav-bar li a:hover {
+    color: #333;
+    border-bottom: 2px solid #00b38a;
+}
+
+.selected {
+	color: #333!important;
+    border-bottom: 2px solid #00b38a;
+}
+
+
+/*	bootstrap样式补充调整	*/
+.modal-content {
+	border: 13px solid rgba(58,58,58,.5);
+	width: 502px;
+	height: 500px;
+	margin-left: 49px;
+}
+
+.modal-header {
+	background-color: #00b38a;
+	color: #fff;
+}
+
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+::-webkit-scrollbar  
+{  
+    width: 5px;  
+    height: 5px;   
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track  
+{  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+    border-radius: 10px;  
+    background-color: #F5F5F5;  
+} 
+  
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb  
+{  
+    border-radius: 10px;  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+    background-color: #00B38A;  
+}
+
+.menu {
+    position: absolute;
+    margin-left: 25%;
+}
+
+.change-city-display {
+    display: block;
+}

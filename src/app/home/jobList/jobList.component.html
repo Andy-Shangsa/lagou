@@ -1,0 +1,52 @@
+<div id="job-list">
+	<div class="job-list-container">
+		<ul class="job-list-ul">
+
+			<li class="job-list-li" *ngFor="let item of jobList">
+				<div class="job-list-top"><!--	list顶部	-->
+					<div class="job-list-top-left fl"><!--	list顶部左边	-->
+						<div class="job-list-name">
+							<h2 class="fl">
+								<a href="" class="fl len-limit">
+									{{item.job}}<span>[{{item.addres}}]</span>
+								</a>
+							</h2>
+							<span class="fl job-list-date">{{item.time}}</span>
+							<div class="chat-me">
+								
+							</div>
+						</div>
+						<div class="job-list-info">
+							<span class="fl job-money">{{item.money}}</span>
+							<span>{{item.year}}</span> /
+							<span>{{item.xueli}}</span>
+						</div>
+					</div>
+					<div class="job-list-top-right fr"><!--	list顶部右边	-->
+						<div class="company-name len-limit">
+							<a>{{item.name}}</a>
+						</div>
+						<div class="industry len-limit">
+							<span>{{item.type}}</span> /
+							<span>{{item.status}}</span>
+						</div>
+					</div>
+				</div>
+				<div class="job-list-bottom">
+					<div class="job-list-bottom-left fl">
+						<span>{{item.tag}}</span>
+					</div>
+					<div class="job-list-bottom-right fl len-limit">
+						{{item.describle}}
+					</div>		
+				</div>
+			</li>
+
+		</ul>
+
+		<a class="see-more fr">
+			<span>查看更多</span>
+			<i class="iconfont icon-arrow-next see-more-icon fr"></i>
+		</a>
+	</div>
+</div>

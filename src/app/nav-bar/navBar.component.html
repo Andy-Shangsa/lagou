@@ -1,0 +1,58 @@
+<div id="nav">
+    <nav class="navbar navbar-default" id="ad-img">
+        <a class="ad-img-a" href="https://activity.lagou.com/activity/dist/promotion2017/mainPC/index.html"></a>
+    </nav>
+
+    <top-bar></top-bar>
+
+    <nav class="navbar navbar-default" id="nav-bar">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false">
+                  <span class="sr-only">Menu</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo-brand" href="#">Brand</a>
+                <div class="change-city" routerLinkActive="change-city-display" routerLink="home">
+                    <strong>全国站</strong>
+                    <em (click)="lgModal.show()">[切换城市]</em>
+                </div>
+            </div>
+      
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-menu">
+            
+                <ul class="nav navbar-nav menu">
+                  <li *ngFor="let value of menu"><a routerLinkActive="selected" [routerLink]="value.hash">{{value.name}}</a></li>
+                </ul>
+                
+            </div>
+
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <!--    弹出框    -->
+    <div bsModal #lgModal = "bs-modal" class = "modal fade" tabindex = "-1" role = "dialog" aria-labelledby = "myLargeModalLabel" aria-hidden = "true" >  
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title pull-left">切换城市</h4>
+                    <button type="button" class="close pull-right" (click)="lgModal.hide()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h4>亲爱的用户您好：</h4>
+                        <p>切换城市分站，让我们为您提供更准确的职位信息。</p>
+          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

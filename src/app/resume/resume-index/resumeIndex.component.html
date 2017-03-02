@@ -1,0 +1,108 @@
+<div id="resume-index" [@flyIn]="selected">
+	<div class="resume-index-container">
+		<div class="resume-index-header">
+			<div class="resume-index-bg">
+				<img src="./assets/img/default_headpic.png" width="120" height="120" class="resume-index-img">
+				<img src="./assets/img/tou.png" width="170" height="702" class="resume-index-opa">
+				<img *ngIf="toggleImg" src="./assets/img/headhover.png" width="119" height="119" class="resume-index-shadow">
+				<input (mouseover)="toggleImg=true" (mouseleave)="toggleImg=false" type="file" name="uppic" class="uppic" title="支持jpg、jpeg、gif、png格式，文件小于10M"/>
+			</div>
+			<div class="resume-index-baseinfo">
+				<i class="baseinfo-left"></i>
+				<i class="baseinfo-right"></i>
+
+				<div class="qr">
+					<div class="qr-dropdown">
+						<div>
+							<img src="./assets/img/qr-bg.PNG" width="302" height="155">
+						</div>
+					</div>
+				</div>
+
+				<div class="resume-Uname-content" (mouseover)="nameEdit=true" (mouseleave)="nameEdit=false">
+					<h2 *ngIf="nameEditStaus" class="resume-Uname">{{resumeInfo.name}}</h2>
+
+					<div *ngIf="!nameEditStaus" class="resume-Uname-input">
+						<input type="text" name="resume-Uname" [(ngModel)]="Uname">
+						<button (click)="doSave('save')" class="Uname-save">保存</button>
+						<a (click)="doSave('cancel')" class="Uname-cancel">取消</a>
+					</div>
+					
+					<div (click)="edit('nameEditStaus')" *ngIf="nameEdit&&nameEditStaus" class="resume-Uname-edit">
+							<i class="iconfont icon-edit"></i>
+							<span>编辑</span>
+					</div>
+				</div>
+				
+				<div class="resume-info-content" (mouseover)="baseInfoEdit=true" (mouseleave)="baseInfoEdit=false">
+					<div class="resume-info" *ngIf="baseInfoEditStaus">
+						<ul class="resume-info-ul">
+							<li><i class="iconfont icon-book"></i>{{resumeInfo.qualification}}</li>
+							<li><i class="iconfont icon-bag"></i>{{Map[resumeInfo.year]}}</li>
+							<li><i class="iconfont icon-location"></i>合肥</li>
+						</ul>
+						<br>
+						<ul class="resume-info-ul">
+							<li><i class="iconfont icon-cell"></i>{{resumeInfo.call}}</li>
+							<li><i class="iconfont icon-envelope"></i>{{resumeInfo.mail}}</li>
+						</ul>
+					</div>
+
+					<div (click)="edit('baseInfoEditStaus')" *ngIf="baseInfoEdit&&baseInfoEditStaus" class="resume-baseinfo-edit">
+						<i class="iconfont icon-edit"></i>编辑
+					</div>
+
+					<div *ngIf="!baseInfoEditStaus" class="baseinfo-form-wrap">
+						<form class="baseinfo-form-container">
+							<div class="form-group">
+								<label for="exampleInputEmail1">最高学历</label>
+							    <select type="email" class="form-control" name="resume-Uqualification" [(ngModel)]="Uqualification">
+							    	<option *ngFor="let val of qualifications">{{val}}</option>
+							    </select>
+							</div>
+							<div class="form-group">
+							    <label for="exampleInputPassword1">工作年限</label>
+							    <select type="password" class="form-control" name="resume-Uyear" [(ngModel)]="Uyear">
+							    	<option *ngFor="let val of workYear">{{val}}</option>
+							    </select>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">电话</label>
+							    <input type="call" class="form-control" id="exampleInputEmail1" name="resume-Ucall" [(ngModel)]="Ucall">
+							</div>
+							<div class="form-group">
+							    <label for="exampleInputPassword1">邮箱</label>
+							    <input type="emil" class="form-control" id="exampleInputPassword1"  name="resume-Umail" [(ngModel)]="Umail">
+							</div>
+						 
+						  <button (click)="doEditSave('save')" class="btn btn-default baseinfo-save">保存</button>
+						  <a (click)="doEditSave('cancel')" class="baseinfo-cancel">取消</a>
+						</form>
+
+					</div>
+
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="resume-index-foot">
+			<h3>换工作是件需要深思熟虑的事</h3>
+			<p>使用在线简历投递可以提高获得面试邀请的几率</p>
+			<button class="btn btn-default resume-index-foot-btn">完善在线简历<i class="iconfont icon-arrow-next" style="margin-left: 12px;font-size: 22px;"></i></button> 
+		</div>
+	</div>
+
+	<div class="resume-index-right">
+		<ul>
+			<li><i class="iconfont icon-box"></i><a>投递箱</a></li>
+			<li><i class="iconfont icon-envelope"></i><a>邀请函</a></li>
+			<li><i class="iconfont icon-Collection"></i><a>收藏夹</a></li>
+			<li><i class="iconfont icon-wifi"></i><a>顶阅栏</a></li>
+		</ul>
+		<div class="resume-index-upload">
+			<i class="iconfont icon-biezhen"></i>
+			<a class="inline" title="上传附件简历">我要上传附件简历</a>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,248 @@
+.home-content {
+    width: 1024px;
+    margin: 15px auto 0;
+    padding-bottom: 100px;
+    height: 1900px;
+}
+
+a {
+    color: #555;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/*
+ * 左部分菜单
+ */
+
+.left-menu {
+    width: 230px;
+    z-index: 101;
+    float: left;
+    position: relative;
+}
+
+.menu-box {
+	background-color: #fafafa;
+}
+
+.menu-main {
+	padding: 6px 12px;
+    border: 2px solid #fafafa;
+    border-right: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu-main h2 {
+	font-size: 18px;
+    padding-left: 8px;
+    font-weight: 500;
+}
+
+.menu-main h2 i {
+	font-size: 16px;
+	font-weight: bold;
+    float: right;
+}
+
+.hover {
+	background-color: #fff;
+	border: 2px solid #c9cbce;
+	border-right: 0px solid #fff;
+	width: 232px;
+	z-index: 102;
+}
+
+.menu-main a {
+	float: left;
+    white-space: nowrap;
+    margin: 0 5px 5px 0;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+.menu-main a:hover {
+	color: #00b38a;
+    text-decoration: underline;
+}
+
+.menu-sub {
+	width: 540px;
+    padding: 15px 30px 5px;
+    position: absolute;
+    left: 230px;
+    z-index: 101;
+    border: 2px solid #c9cbce;
+    background: #fff;
+}
+
+.sub-technology {
+	top: 0px;
+    height: 340px;
+}
+
+.sub-product {
+	top: 125px;
+    height: 340px;
+}
+
+.sub-design {
+	top: 175px;
+    height: 340px;
+}
+
+.sub-operate {
+	top: 375px;
+    height: 340px;
+}
+
+.sub-sell {
+	top: 215px;
+	height: 600px;
+}
+
+.sub-function {
+	top: 507px;
+    height: 340px;
+}
+
+.sub-finance {
+	top: 605px;
+	bottom: 58px;
+}
+
+
+.nav-sub {
+	display: block;
+    font-size: 18px;
+    height: 46px;
+    line-height: 46px;
+    background: #fafafa;
+    padding: 0 0 0 20px;
+    margin-top: 12px;
+    border-bottom: 2px solid #00b38a;
+}
+
+.nav-sub span {
+	float: left;
+	margin-left: 12px;
+}
+
+.nav-sub i {
+	display: block;
+    float: right;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 21px;
+    color: #999;
+}
+
+/*
+ * 右边主内容区
+ */
+
+ .right-content {
+ 	float: right;
+ 	width: 740px;
+ }
+
+ .search-input {
+ 	width: 590px;
+    height: 37px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 2px solid #00b38a;
+ }
+
+ .search-btn {
+ 	height: 37px;
+    width: 150px;
+    color: #FFF;
+    font-size: 18px;
+    border: 2px solid #00b38a;
+    background: #00b38a;
+ }
+
+ .hot-search {
+ 	overflow: hidden;
+    margin: 6px 0 18px
+ }
+
+ .hot-search dt {
+ 	width: 70px;
+    font-size: 14px;
+    float: left;
+ }
+
+ .hot-search dd {
+ 	margin-right: 20px;
+ 	float: left;
+ 	color: #00b38a;
+ 	cursor: pointer;
+ }
+
+ .hot-search dd:hover {
+ 	text-decoration: underline;
+ }
+
+ .auto-search {
+ 	position: absolute;
+    z-index: 20;
+    background-color: #fff;
+    border: 2px solid #00b38a;
+    border-top: 0;
+    width: 590px;
+ }
+
+ .show {
+    display: block;
+ }
+
+ .hide {
+    display: none;
+ }
+
+ .auto-search span {
+ 	display: block;
+    border-bottom: 1px dashed #ededed;
+    font-size: 15px;
+    color: #999;
+    background-color: #fafafa!important;
+    padding: 5px 6px;
+ }
+
+ .auto-search ul {
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ .auto-search li {
+ 	font-size: 1.1em;
+    color: #555;
+    padding: 5px 6px;
+    cursor: pointer;
+ }
+
+  .auto-search li:hover {
+  	background-color: #00b38a;
+ }
+
+ .job-tab {
+ 	font-size: 0;
+    background: #f6f6f6;
+ }
+
+ .job-tab li {
+    display: inline-block;
+    padding: 7px 20px;
+    font-size: 18px;
+    color: #999;
+ 	cursor: pointer;
+ }
+
+ .job-tab li.activeTab {
+ 	border-top: 3px solid #00b38a;
+    background: #fff;
+    color: #333;
+ }
