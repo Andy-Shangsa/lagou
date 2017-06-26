@@ -55,9 +55,7 @@ export class HomeComponent {
             this.autoSearch = true;
             this.searchPlaceholder = "搜索职位、公司或地点"
         });
-        /*
-         * angular2里面封装了dom操作方式 document.querySelector('***')
-         */
+        
         document.querySelector('body').addEventListener("click", (e) => {
         	if(e.target['className'] !== 'search-input' && e.target['className'] !== 'auto-search-title' && e.target['className'] !== 'auto-search-list') {
         		this.autoSearch = false;
